@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans:wght@100&display=swap');
+
+body {
+  height: 90vh;
+  width: 100vw;
+  background-color: #093557;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.main-app {
+    text-align: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    width: 50vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 90vh;
+    border-radius: 30px;
+    background-color: #093557;
+    box-shadow: 
+    10px 10px 30px 0 rgba(0, 0, 0, 0.692),
+    -10px -10px 30px 0 #b3bcc271;
+
+}
+
+.main-app h1 {
+  margin:0px;
+  height: 10%;
+  color:#fefefe;
+  font-size: 50px;
+
+}
+
+.image-container{
+  margin-left:auto;
+  margin-right: auto;
+  height: 50%;
+  width: 30vw;
+  border-radius: 30px;
+  box-shadow:
+  inset 0 10px 30px 0 rgba(0, 0, 0, 0.582),
+  inset -10px -10px 30px 0 #b3bcc271;
+}
+
+.image{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image img{
+  top: 50%;
+  max-height: 70%;
+  border-radius: 30px;
+}
+
+.cta-button {
+  border-bottom: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  min-width: 250px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  margin:0;
+}
+
+.connect-wallet-button {
+  background: #111213;
+}
+
+.mint-nft-button {
+    background: #111213;
+}
+
+
+.cta-button::after {
+  position: absolute;
+  bottom: 8px;
+  left: 10%;
+  content: '';
+  width: 80%;
+  height: 2px;
+  background: #8da13b;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+.cta-button:hover::after {
+  transform: scale(1, 1);
+}
+
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #8da13b; /* Yellow */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 0px 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.mining {
+  height: 20%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mining span, .mining div {
+  display: inline-block;
+}
+
+.mining span{
+  color: #f3f3f3;
+  font-size: 20px;
+}
+
+.minted-container{
+  position: relative;
+  margin: 0;
+  height: 20%;
+}
+
+
+.minted-char{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  color: #8da13b;
+}
+
+
+
+
+.svg-wrapper {
+  background-color: #11121356;
+  width: 300px;
+  background-color: transparent;
+  /*make sure to use same height/width as in the html*/
+  height: 100%;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #f3f3f3;
+  stroke-dasharray: 150 610;
+  stroke-dashoffset: -455;
+  transition: 1s all ease;
+}
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 4px;
+  stroke-dashoffset: 0;
+  stroke: #8da13b;
+}
+
+#text p{
+
+  font-weight: bold;
+  font-size: 35px;
+  color: #f3f3f3;
+  text-align: center;
+  pointer-events: none;
+}
+
+#svg {
+  position: absolute;
+}
+
+
+
